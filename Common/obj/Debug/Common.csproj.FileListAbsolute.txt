@@ -1,0 +1,6 @@
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\Common\bin\Debug\Common.dll
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\Common\bin\Debug\Common.pdb
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\Common\obj\Debug\Common.dll
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\Common\obj\Debug\Common.pdb

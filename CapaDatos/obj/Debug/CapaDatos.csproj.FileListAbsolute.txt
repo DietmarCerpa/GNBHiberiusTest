@@ -1,0 +1,11 @@
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\CapaDatos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\CapaDatos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\JTonyVaio\Documents\GitHub\GNBHiberiusTest\CapaDatos\obj\Debug\CapaDatos.pdb

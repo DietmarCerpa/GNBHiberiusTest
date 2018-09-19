@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BD_GNBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="GNB_CONVERSIONES">
+    <Key>
+      <PropertyRef Name="ID_CONVERSION" />
+    </Key>
+    <Property Name="ID_CONVERSION" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FROM_CURRENCY" Type="varchar" MaxLength="50" />
+    <Property Name="TO_CURRENCY" Type="varchar" MaxLength="50" />
+    <Property Name="RATE" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GNB_PRODUCTOS">
+    <Key>
+      <PropertyRef Name="ID_SKU" />
+    </Key>
+    <Property Name="ID_SKU" Type="int" Nullable="false" />
+    <Property Name="AMMOUNT" Type="money" Nullable="false" />
+    <Property Name="CURRENCY" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="BD_GNBModelStoreContainer">
+    <EntitySet Name="GNB_CONVERSIONES" EntityType="Self.GNB_CONVERSIONES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GNB_PRODUCTOS" EntityType="Self.GNB_PRODUCTOS" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

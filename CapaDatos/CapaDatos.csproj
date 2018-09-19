@@ -49,10 +49,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GNB_CONVERSIONES.cs">
+      <DependentUpon>GoliatNBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GNB_PRODUCTOS.cs">
+      <DependentUpon>GoliatNBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="GoliatNBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GoliatNBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GoliatNBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GoliatNBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="GoliatNBModel.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -60,6 +71,8 @@
       <DependentUpon>GoliatNBModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicioConversiones.cs" />
+    <Compile Include="ServicioProductos.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="GoliatNBModel.edmx">
@@ -78,6 +91,12 @@
     <Content Include="GoliatNBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>GoliatNBModel.Context.cs</LastGenOutput>
+      <DependentUpon>GoliatNBModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="GoliatNBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GoliatNBModel.edmx</DependentUpon>
+      <LastGenOutput>GoliatNBModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

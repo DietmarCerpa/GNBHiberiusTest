@@ -12,21 +12,21 @@ public interface IService
 {
 
     [OperationContract]
-    void AgregarProductos(string Productos);
+    void AgregarProductos(string mP);
 
     [OperationContract]
-    void ActualizarProductos(string Productos);
+    void ActualizarProductos(string mP);
 
     [OperationContract]
     string ObtenerProductos();
 
     [OperationContract]
-    void AgregarConversiones(string Conversiones);
+    void AgregarConversiones(string mC);
 
     [OperationContract]
-    void ActualizarConversiones(string Conversiones);
+    void ActualizarConversiones(string mC);
 
     [OperationContract]
-    void ObtenerConversiones();
+    string ObtenerConversiones();
 }
 
