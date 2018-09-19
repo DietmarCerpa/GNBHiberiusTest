@@ -50,53 +50,51 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GNB_CONVERSIONES.cs">
-      <DependentUpon>GoliatNBModel.tt</DependentUpon>
+      <DependentUpon>GoliatModel.tt</DependentUpon>
     </Compile>
     <Compile Include="GNB_PRODUCTOS.cs">
-      <DependentUpon>GoliatNBModel.tt</DependentUpon>
+      <DependentUpon>GoliatModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="GoliatNBModel.Context.cs">
+    <Compile Include="GoliatModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GoliatNBModel.Context.tt</DependentUpon>
+      <DependentUpon>GoliatModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="GoliatNBModel.cs">
+    <Compile Include="GoliatModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GoliatNBModel.tt</DependentUpon>
+      <DependentUpon>GoliatModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="GoliatNBModel.Designer.cs">
+    <Compile Include="GoliatModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GoliatNBModel.edmx</DependentUpon>
+      <DependentUpon>GoliatModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServicioConversiones.cs" />
     <Compile Include="ServicioProductos.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="GoliatNBModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>GoliatNBModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.Config" />
-    <None Include="GoliatNBModel.edmx.diagram">
-      <DependentUpon>GoliatNBModel.edmx</DependentUpon>
+    <EntityDeploy Include="GoliatModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GoliatModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="GoliatModel.edmx.diagram">
+      <DependentUpon>GoliatModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GoliatNBModel.Context.tt">
+    <Content Include="GoliatModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>GoliatNBModel.Context.cs</LastGenOutput>
-      <DependentUpon>GoliatNBModel.edmx</DependentUpon>
+      <DependentUpon>GoliatModel.edmx</DependentUpon>
+      <LastGenOutput>GoliatModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="GoliatNBModel.tt">
+    <Content Include="GoliatModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GoliatNBModel.edmx</DependentUpon>
-      <LastGenOutput>GoliatNBModel.cs</LastGenOutput>
+      <DependentUpon>GoliatModel.edmx</DependentUpon>
+      <LastGenOutput>GoliatModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="BD_GNBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="BD_GNBModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="GNB_CONVERSIONES">
           <Key>
             <PropertyRef Name="ID_CONVERSION" />
@@ -16,13 +16,14 @@
         </EntityType>
         <EntityType Name="GNB_PRODUCTOS">
           <Key>
-            <PropertyRef Name="ID_SKU" />
+            <PropertyRef Name="ID_PRODUCTOS" />
           </Key>
-          <Property Name="ID_SKU" Type="int" Nullable="false" />
+          <Property Name="ID_PRODUCTOS" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SKU" Type="int" Nullable="false" />
           <Property Name="AMMOUNT" Type="money" Nullable="false" />
           <Property Name="CURRENCY" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="BD_GNBModelStoreContainer">
+        <EntityContainer Name="BD_GNBModel1StoreContainer">
           <EntitySet Name="GNB_CONVERSIONES" EntityType="Self.GNB_CONVERSIONES" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="GNB_PRODUCTOS" EntityType="Self.GNB_PRODUCTOS" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
@@ -30,7 +31,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="BD_GNBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="BD_GNBModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="GNB_CONVERSIONES">
           <Key>
             <PropertyRef Name="ID_CONVERSION" />
@@ -42,13 +43,14 @@
         </EntityType>
         <EntityType Name="GNB_PRODUCTOS">
           <Key>
-            <PropertyRef Name="ID_SKU" />
+            <PropertyRef Name="ID_PRODUCTOS" />
           </Key>
-          <Property Name="ID_SKU" Type="Int32" Nullable="false" />
+          <Property Name="ID_PRODUCTOS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SKU" Type="Int32" Nullable="false" />
           <Property Name="AMMOUNT" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="CURRENCY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="BD_GNBEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="BD_GNBEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="GNB_CONVERSIONES" EntityType="Self.GNB_CONVERSIONES" />
           <EntitySet Name="GNB_PRODUCTOS" EntityType="Self.GNB_PRODUCTOS" />
         </EntityContainer>
@@ -57,9 +59,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="BD_GNBModelStoreContainer" CdmEntityContainer="BD_GNBEntities">
+        <EntityContainerMapping StorageEntityContainer="BD_GNBModel1StoreContainer" CdmEntityContainer="BD_GNBEntities1">
           <EntitySetMapping Name="GNB_CONVERSIONES">
-            <EntityTypeMapping TypeName="BD_GNBModel.GNB_CONVERSIONES">
+            <EntityTypeMapping TypeName="BD_GNBModel1.GNB_CONVERSIONES">
               <MappingFragment StoreEntitySet="GNB_CONVERSIONES">
                 <ScalarProperty Name="ID_CONVERSION" ColumnName="ID_CONVERSION" />
                 <ScalarProperty Name="FROM_CURRENCY" ColumnName="FROM_CURRENCY" />
@@ -69,9 +71,10 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="GNB_PRODUCTOS">
-            <EntityTypeMapping TypeName="BD_GNBModel.GNB_PRODUCTOS">
+            <EntityTypeMapping TypeName="BD_GNBModel1.GNB_PRODUCTOS">
               <MappingFragment StoreEntitySet="GNB_PRODUCTOS">
-                <ScalarProperty Name="ID_SKU" ColumnName="ID_SKU" />
+                <ScalarProperty Name="ID_PRODUCTOS" ColumnName="ID_PRODUCTOS" />
+                <ScalarProperty Name="SKU" ColumnName="SKU" />
                 <ScalarProperty Name="AMMOUNT" ColumnName="AMMOUNT" />
                 <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
               </MappingFragment>

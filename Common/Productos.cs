@@ -9,7 +9,8 @@ namespace Common
     [Serializable]
     public class Productos
     {
-        public int Id_Sku { get; set; }
+        public int Id_Productos { get; set; }
+        public int Sku { get; set; }
         public double Ammount{ get; set; }
         public string Currency{ get; set; }
     }

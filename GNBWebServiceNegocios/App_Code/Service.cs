@@ -47,7 +47,8 @@ public class Service : IService
         //se instancea la tabla que contiene los campos a modificar
         GNB_PRODUCTOS pDatos = new GNB_PRODUCTOS();
         //se almacenan los datos dentro de los campos correspondientes
-        pDatos.ID_SKU = pProductos.Id_Sku;
+        pDatos.ID_PRODUCTOS = pProductos.Id_Productos;
+        pDatos.SKU = pProductos.Sku;
         pDatos.AMMOUNT = Convert.ToDecimal(pProductos.Ammount);
         pDatos.CURRENCY = pProductos.Currency;
         //se ACTUALIZAN los productos al servicio
@@ -88,7 +89,8 @@ public class Service : IService
         //se instancea la tabla que contiene los campos a modificar
         GNB_PRODUCTOS pDatos = new GNB_PRODUCTOS();
         //se almacenan los datos dentro de los campos correspondientes
-        pDatos.ID_SKU = pProductos.Id_Sku;
+        pDatos.ID_PRODUCTOS = pProductos.Id_Productos;
+        pDatos.SKU = pProductos.Sku;
         pDatos.AMMOUNT = Convert.ToDecimal(pProductos.Ammount);
         pDatos.CURRENCY = pProductos.Currency;
         //se agregan los productos al servicio
@@ -133,7 +135,8 @@ public class Service : IService
         foreach(GNB_PRODUCTOS indice in pProductos)
         {
             Productos iComun = new Productos();
-            iComun.Id_Sku = indice.ID_SKU;
+            iComun.Id_Productos = indice.ID_PRODUCTOS;
+            iComun.Sku = indice.SKU;
             iComun.Ammount = Convert.ToDouble(indice.AMMOUNT);
             iComun.Currency = indice.CURRENCY;
             pProductosCollection.Add(iComun);

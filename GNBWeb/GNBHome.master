@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GNBHome.master.cs" Inherits="GNBHome" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <div class="OpcionesMenu">
+            <ul>
+                <li><a href="Home.aspx">Inicio</a></li>
+                <li><a href="#">Buscar Transacciones</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder id="contentBody" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
